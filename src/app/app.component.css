@@ -1,0 +1,88 @@
+.container{
+    border: 1px solid lightgrey;
+    width: 100%;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow:1px 1px 1px lightgrey;
+}
+h2{
+    text-align: center;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+}
+.amountInput{
+    margin: 15px 0px;
+    font-size: 17px;
+}
+input[type="number"]{
+    margin-top: 8px;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    border: 1px solid lightgrey;
+    font-size: 18px;
+}
+input[type=number]:focus{
+    border:1px solid #675AFE !important;
+}
+.select{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+select{
+    border: 1px solid lightgrey;
+    padding: 12px;
+    padding-right: 10px;
+    text-align: right;
+}
+select:focus{
+    border:1px solid #675AFE !important;
+}
+.flags{
+    position: relative;
+}
+.label{
+    margin-bottom: 8px;
+}
+img{
+    height: 19px;
+    position: absolute;
+    margin: 10px 2px;
+}
+.result{
+    margin-top: 40px;
+    font-size: 17px;
+}
+button{
+    margin-top: 40px;
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #675AFE;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.link{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    border: 1px solid #675AFE;
+    color: rgb(55, 55, 55);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.link:hover{
+    background-color: #675AFE;
+    color: white;
+}

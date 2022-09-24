@@ -1,0 +1,33 @@
+<div class="container">
+  <h2>Currency Converter</h2>
+    <div class="row">
+      <div class="amountInput">
+        <label for="amount">Enter Amount</label> <br>
+        <input id="amount" type="number" [(ngModel)]="amount" />
+      </div>
+      <div class="select">
+        <div class="flags">
+          <div class="label">From</div>
+          <img src="https://flagcdn.com/48x36/{{flagFrom}}.png" alt="flag" />
+          <select name="currencyFrom" id="currencyFrom" #from (change)="getFlag(from.value, to.value)" >
+            <option *ngFor="let c of currenciesFrom" [value]="c" [selected]="c == 'MAD'" >
+              {{c}}
+            </option>
+          </select>
+        </div>
+        <div class="flags">
+          <div class="label">To</div>
+          <img src="https://flagcdn.com/48x36/{{flagTo}}.png" alt="flag" />
+          <select name="currencyTo" id="currencyTo" #to (change)="getFlag(from.value, to.value)"  >
+            <option *ngFor="let c of currenciesTo" [value]="c" [selected]="c == 'USD'" >
+              {{c}}
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <p class="result">{{result}}</p>
+    <button (click)="convertCurrency(from.value, to.value)" >Convert</button>
+  </div>
+ 
+
